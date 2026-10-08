@@ -54,7 +54,10 @@ def verify():
             dx=np.zeros((g.n,g.d));dx[1:]=np.einsum('nij,nj->ni',state['S'],state['x'])
             rn,tn=retract(state['oldR'],state['oldt'],dx,accepted[-1]['alpha'])
             pose_error=max(float(np.max(abs(rn-state['R']))),float(np.max(abs(tn-state['t']))))
-            assert pose_error==0
+            # Different libm/BLAS builds can round the same SE exponential
+            # differently; compare at a strict scale-aware FP64 tolerance.
+            pose_scale=max(1.,float(np.max(abs(state['R']))),float(np.max(abs(state['t']))))
+            assert pose_error<=1e-12*pose_scale,(name,method,pose_error,pose_scale)
             checks[f'{name}_{method}']=dict(accepted_steps=len(accepted),cost_max_relative_error=error,
                 canonical_warp_potential_relative_error=affine_error,last_pose_update_error=pose_error,
                 final_cost=float(costs[-1]),work_ledger_pass=True)

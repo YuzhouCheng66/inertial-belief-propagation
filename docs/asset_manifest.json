@@ -401,8 +401,8 @@
   },
   {
     "path": "scripts/verify_saved_results.py",
-    "bytes": 3789,
-    "sha256": "8227227a5a2c481e692d466c30f1e9492245788323d53ca6bdc92d7834bab123"
+    "bytes": 4083,
+    "sha256": "33d043837b23e803fba82aa2d599dce36076bb92565f3ae376cb012d3d5d4af5"
   },
   {
     "path": "src/inertial_bp/__init__.py",
