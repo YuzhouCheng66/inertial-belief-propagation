@@ -1,0 +1,38 @@
+{
+  "SE2_warp": {
+    "chart_derivative_error": 6.069078573034403e-11,
+    "gaussian_energy_error": 1.1102230246251565e-16,
+    "covariance_error": 2.220446049250313e-16
+  },
+  "SE3_warp": {
+    "chart_derivative_error": 4.342426418446621e-11,
+    "gaussian_energy_error": 2.3314683517128287e-15,
+    "covariance_error": 2.498001805406602e-16
+  },
+  "FR079": {
+    "parallel_precision_step_max_absolute_errors": [
+      1.1102230246251565e-16,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "complete_cycle_matches_original_21cycle_prefix": true,
+    "sweeps": 160,
+    "corrections": 20,
+    "post_correction_normal": 0.09381412851127091
+  },
+  "Cubicle": {
+    "parallel_precision_step_max_absolute_errors": [
+      7.771561172376096e-16,
+      0.0,
+      0.0,
+      7.105427357601002e-15,
+      0.0
+    ],
+    "complete_cycle_matches_original_21cycle_prefix": true,
+    "sweeps": 160,
+    "corrections": 20,
+    "post_correction_normal": 0.6097210484150856
+  }
+}

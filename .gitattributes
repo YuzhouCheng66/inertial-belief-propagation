@@ -1,0 +1,9 @@
+# Preserve audited input/result/source bytes across Windows and Linux clones.
+* -text
+* whitespace=cr-at-eol
+# Upstream benchmark text retains its original trailing spaces and byte hashes.
+data/** -whitespace
+ibp_more_experiments/data/** -whitespace
+*.npz binary
+*.bin binary
+*.png binary

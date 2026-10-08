@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-08T23:17:42.412967+00:00",
+  "runtime": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "numba": "0.59.1"
+  },
+  "unit_tests": {
+    "passed": true,
+    "count": 7,
+    "output": "test_complete_20_cycles_match_next_original_prefix (test_algorithm.AlgorithmTests.test_complete_20_cycles_match_next_original_prefix) ... ok\ntest_eta_lift_achieves_supported_mean_correction (test_algorithm.AlgorithmTests.test_eta_lift_achieves_supported_mean_correction) ... ok\ntest_fresh_raw_input_preparation_and_local_basis (test_algorithm.AlgorithmTests.test_fresh_raw_input_preparation_and_local_basis) ... ok\ntest_invalid_run_parameters (test_algorithm.AlgorithmTests.test_invalid_run_parameters) ... ok\ntest_lie_chart_precision_eta_and_covariance_warp (test_algorithm.AlgorithmTests.test_lie_chart_precision_eta_and_covariance_warp) ... ok\ntest_original_frozen_prefix_and_independent_beta (test_algorithm.AlgorithmTests.test_original_frozen_prefix_and_independent_beta) ... ok\ntest_pure_gbp_is_actual_message_iteration (test_algorithm.AlgorithmTests.test_pure_gbp_is_actual_message_iteration) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 10.636s\n\nOK\n"
+  },
+  "long_frozen_replay": {
+    "smallGrid3D": {
+      "ibp": {
+        "method": "ibp",
+        "sweeps": 1768,
+        "F_calls": 1989,
+        "kernel_F_calls": 1989,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 220,
+        "filter_rounds": 0,
+        "restarts": 17,
+        "status": "converged",
+        "normal_residual": 9.740700202912946e-07,
+        "message_residual": 1.9229124029602632e-07,
+        "seconds": 0.12175849988125265,
+        "mean_beta": 0.853970301124009,
+        "max_beta": 0.9772590275258022,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "gbp": {
+        "method": "gbp",
+        "sweeps": 8192,
+        "F_calls": 8193,
+        "kernel_F_calls": 8193,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 0,
+        "filter_rounds": 0,
+        "restarts": 0,
+        "status": "cap",
+        "normal_residual": 0.025925559839700133,
+        "message_residual": 0.0019582593635219707,
+        "seconds": 0.1690962000284344,
+        "mean_beta": 0.0,
+        "max_beta": 0.0,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "max_relative_checkpoint_error": 0.0
+    },
+    "FR079": {
+      "ibp": {
+        "method": "ibp",
+        "sweeps": 8192,
+        "F_calls": 9216,
+        "kernel_F_calls": 9216,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 1023,
+        "filter_rounds": 0,
+        "restarts": 7473,
+        "status": "cap",
+        "normal_residual": 0.0002689010531735059,
+        "message_residual": 6.521716538525021e-06,
+        "seconds": 1.2952902999240905,
+        "mean_beta": 0.5688676453980273,
+        "max_beta": 0.995,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "gbp": {
+        "method": "gbp",
+        "sweeps": 8192,
+        "F_calls": 8193,
+        "kernel_F_calls": 8193,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 0,
+        "filter_rounds": 0,
+        "restarts": 0,
+        "status": "cap",
+        "normal_residual": 0.00024735724064895933,
+        "message_residual": 1.5396194862057984e-05,
+        "seconds": 0.28177740005776286,
+        "mean_beta": 0.0,
+        "max_beta": 0.0,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "max_relative_checkpoint_error": 0.0
+    },
+    "Sphere": {
+      "ibp": {
+        "method": "ibp",
+        "sweeps": 8192,
+        "F_calls": 9216,
+        "kernel_F_calls": 9216,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 1023,
+        "filter_rounds": 0,
+        "restarts": 609,
+        "status": "cap",
+        "normal_residual": 4.619886078548444e-06,
+        "message_residual": 3.060610953735063e-07,
+        "seconds": 8.421432300005108,
+        "mean_beta": 0.9397800917608213,
+        "max_beta": 0.995,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "gbp": {
+        "method": "gbp",
+        "sweeps": 8192,
+        "F_calls": 8193,
+        "kernel_F_calls": 8193,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 0,
+        "filter_rounds": 0,
+        "restarts": 0,
+        "status": "cap",
+        "normal_residual": 0.0004259611493760814,
+        "message_residual": 1.6883436413038097e-05,
+        "seconds": 6.109896699897945,
+        "mean_beta": 0.0,
+        "max_beta": 0.0,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "max_relative_checkpoint_error": 0.0
+    },
+    "Cubicle": {
+      "ibp": {
+        "method": "ibp",
+        "sweeps": 8192,
+        "F_calls": 9216,
+        "kernel_F_calls": 9216,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 1023,
+        "filter_rounds": 0,
+        "restarts": 84857,
+        "status": "cap",
+        "normal_residual": 0.02861716866094082,
+        "message_residual": 0.00020222630551955758,
+        "seconds": 39.748733199900016,
+        "mean_beta": 0.4579720462655177,
+        "max_beta": 0.995,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "gbp": {
+        "method": "gbp",
+        "sweeps": 8192,
+        "F_calls": 8193,
+        "kernel_F_calls": 8193,
+        "final_diagnostic_F_calls": 0,
+        "corrections": 0,
+        "filter_rounds": 0,
+        "restarts": 0,
+        "status": "cap",
+        "normal_residual": 0.003858496531502362,
+        "message_residual": 5.98711898961224e-05,
+        "seconds": 10.66232610004954,
+        "mean_beta": 0.0,
+        "max_beta": 0.0,
+        "complete_cycles": false,
+        "direction_global_reductions": 0
+      },
+      "max_relative_checkpoint_error": 0.0
+    }
+  },
+  "saved_nonlinear": {
+    "FR079_projected995": {
+      "accepted_steps": 20,
+      "cost_max_relative_error": 0.0,
+      "canonical_warp_potential_relative_error": 6.938893903907228e-18,
+      "last_pose_update_error": 0.0,
+      "final_cost": 18.815560163550757,
+      "work_ledger_pass": true
+    },
+    "FR079_GBP": {
+      "accepted_steps": 20,
+      "cost_max_relative_error": 0.0,
+      "canonical_warp_potential_relative_error": 2.5153490401663703e-17,
+      "last_pose_update_error": 0.0,
+      "final_cost": 18.843224039043864,
+      "work_ledger_pass": true
+    },
+    "Cubicle_projected995": {
+      "accepted_steps": 20,
+      "cost_max_relative_error": 0.0,
+      "canonical_warp_potential_relative_error": 6.076736336346755e-15,
+      "last_pose_update_error": 0.0,
+      "final_cost": 59848.18713130592,
+      "work_ledger_pass": true
+    },
+    "Cubicle_GBP": {
+      "accepted_steps": 20,
+      "cost_max_relative_error": 0.0,
+      "canonical_warp_potential_relative_error": 4.685558626632384e-15,
+      "last_pose_update_error": 0.0,
+      "final_cost": 69273.39517617336,
+      "work_ledger_pass": true
+    }
+  },
+  "fresh_nonlinear": {
+    "FR079": {
+      "relinearizations": 20,
+      "cycles_per_linearization": 20,
+      "cost_max_relative_error": 0.0,
+      "pose_max_absolute_error": 0.0,
+      "work_ledger_matches": true,
+      "final_cost": 18.815560163550757
+    },
+    "Cubicle": {
+      "relinearizations": 2,
+      "cycles_per_linearization": 20,
+      "cost_max_relative_error": 2.229151609073425e-14,
+      "pose_max_absolute_error": 2.5588464680481593e-10,
+      "work_ledger_matches": true,
+      "final_cost": 249369.83176064066
+    }
+  }
+}

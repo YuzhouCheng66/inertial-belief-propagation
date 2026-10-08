@@ -1,0 +1,20 @@
+{
+  "name": "ising128_s201",
+  "domain": "ising",
+  "L": 128,
+  "N": 16384,
+  "seed": 201,
+  "mode": "slow",
+  "group_nodes": 32,
+  "J": 0.3463,
+  "setup_seconds": 0.0002399159999981748,
+  "precision_iterations": 0,
+  "precision_error": 0.0,
+  "beta_cap": 0.95,
+  "tau": 0.45,
+  "period": 8,
+  "tn_base_tensor_seed": null,
+  "tn_original_screened_noise": null,
+  "nonuniform_physical_bias": false,
+  "precision_frozen": false
+}

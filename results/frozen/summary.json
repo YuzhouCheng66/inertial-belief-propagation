@@ -1,0 +1,272 @@
+{
+  "algorithm": "projected995: 8 GBP sweeps + local B residual correction + adaptive projected low-frequency inertia, beta cap .995; no filter",
+  "scope": "saved frozen-linearization k0 trajectories, not nonlinear end-to-end performance or fresh solver runs",
+  "stopping": "both normal relative residual and canonical message relative residual <= 1e-6",
+  "plot_checkpoint": "pre-correction, every 8 actual GBP sweeps; no interpolation, smoothing, or extrapolation",
+  "data_columns": [
+    "sweeps",
+    "F_calls",
+    "normal_residual",
+    "message_residual",
+    "physical_energy",
+    "relative_energy_gap"
+  ],
+  "energy_reference": "E* reconstructed as E_final / (1-q_final), using saved candidate posthoc relative A-energy error; checked against pure endpoint independently",
+  "time_limitation": "No per-point measured timestamps in NPZ. Sweep ratios exclude block correction and additional residual evaluation cost; no wall-time curve inferred.",
+  "datasets": {
+    "smallGrid3D": {
+      "pure": {
+        "sweeps": 116200,
+        "F_calls": 116201,
+        "normal_residual": 9.997279496341223e-07,
+        "message_residual": 7.055956739755482e-08,
+        "physical_energy": -9576.132753413778,
+        "status": "converged"
+      },
+      "unfiltered": {
+        "sweeps": 1768,
+        "F_calls": 1989,
+        "normal_residual": 9.740700202912946e-07,
+        "message_residual": 1.9229124029602632e-07,
+        "physical_energy": -9576.132703534491,
+        "status": "converged"
+      },
+      "unfiltered_config": {
+        "mode": 1,
+        "filter_target": 0,
+        "rounds": 0,
+        "filter_kind": 0,
+        "bcap": 0.995,
+        "adaptive": true,
+        "spatial_scale": 1.0,
+        "period": 8,
+        "omega": 1.0
+      },
+      "unfiltered_corrections": 220,
+      "sweep_reduction": "65.72×",
+      "optimal_energy_reconstructed": -9576.132753416048,
+      "optimal_energy_pure_crosscheck": -9576.132753416065,
+      "common_budget": {
+        "sweeps": 1768,
+        "pure_normal": 0.04802555662033351,
+        "unfiltered_normal": 9.740700202912946e-07,
+        "normal_ratio": 2.0282326511940596e-05,
+        "pure_energy": -9562.516091583884,
+        "unfiltered_energy": -9576.132703534491,
+        "pure_relative_energy_gap": 0.0014219374545853722,
+        "unfiltered_relative_energy_gap": 5.208945860016118e-09
+      }
+    },
+    "FR079": {
+      "pure": {
+        "sweeps": 727032,
+        "F_calls": 727033,
+        "normal_residual": 9.999736245694115e-07,
+        "message_residual": 8.725006904072324e-08,
+        "physical_energy": -2294.8317035588925,
+        "status": "converged"
+      },
+      "unfiltered": {
+        "sweeps": 50104,
+        "F_calls": 56367,
+        "normal_residual": 9.510433149351389e-07,
+        "message_residual": 3.0985349928574266e-08,
+        "physical_energy": -2294.8317224570383,
+        "status": "converged"
+      },
+      "unfiltered_config": {
+        "mode": 1,
+        "filter_target": 0,
+        "rounds": 0,
+        "filter_kind": 0,
+        "bcap": 0.995,
+        "adaptive": true,
+        "spatial_scale": 1.0,
+        "period": 8,
+        "omega": 1.0
+      },
+      "unfiltered_corrections": 6262,
+      "sweep_reduction": "14.51×",
+      "optimal_energy_reconstructed": -2294.8317226267186,
+      "optimal_energy_pure_crosscheck": -2294.8317226268546,
+      "common_budget": {
+        "sweeps": 50104,
+        "pure_normal": 4.189634433841132e-05,
+        "unfiltered_normal": 9.510433149351389e-07,
+        "normal_ratio": 0.02269991164988601,
+        "pure_energy": -2294.821962159496,
+        "unfiltered_energy": -2294.8317224570383,
+        "pure_relative_energy_gap": 4.2532387567103944e-06,
+        "unfiltered_relative_energy_gap": 7.39402075152583e-11
+      }
+    },
+    "Sphere": {
+      "pure": {
+        "sweeps": 400000,
+        "F_calls": 400001,
+        "normal_residual": 1.3471080113957815e-05,
+        "message_residual": 8.029307760276641e-07,
+        "physical_energy": -172703.60482881113,
+        "status": "cap"
+      },
+      "unfiltered": {
+        "sweeps": 14424,
+        "F_calls": 16227,
+        "normal_residual": 9.095227154248993e-07,
+        "message_residual": 5.316978467839001e-08,
+        "physical_energy": -172710.31559217756,
+        "status": "converged"
+      },
+      "unfiltered_config": {
+        "mode": 1,
+        "filter_target": 0,
+        "rounds": 0,
+        "filter_kind": 0,
+        "bcap": 0.995,
+        "adaptive": true,
+        "spatial_scale": 1.0,
+        "period": 8,
+        "omega": 1.0
+      },
+      "unfiltered_corrections": 1802,
+      "sweep_reduction": ">27.73×",
+      "optimal_energy_reconstructed": -172710.31992123564,
+      "optimal_energy_pure_crosscheck": -172710.31992123454,
+      "common_budget": {
+        "sweeps": 14424,
+        "pure_normal": 0.0001664268631003203,
+        "unfiltered_normal": 9.095227154248993e-07,
+        "normal_ratio": 0.005464999450699548,
+        "pure_energy": -172664.43196898754,
+        "unfiltered_energy": -172710.31559217756,
+        "pure_relative_energy_gap": 0.00026569316916920393,
+        "unfiltered_relative_energy_gap": 2.5065427947338328e-08
+      }
+    },
+    "Cubicle": {
+      "pure": {
+        "sweeps": 400000,
+        "F_calls": 400001,
+        "normal_residual": 9.117085875135918e-05,
+        "message_residual": 3.720365819086238e-07,
+        "physical_energy": -393256.6890687297,
+        "status": "cap"
+      },
+      "unfiltered": {
+        "sweeps": 80000,
+        "F_calls": 90000,
+        "normal_residual": 0.005374819375176029,
+        "message_residual": 1.7955315373250566e-05,
+        "physical_energy": -391864.62973806413,
+        "status": "cap"
+      },
+      "unfiltered_config": {
+        "mode": 1,
+        "filter_target": 0,
+        "rounds": 0,
+        "filter_kind": 0,
+        "bcap": 0.995,
+        "adaptive": true,
+        "spatial_scale": 1.0,
+        "period": 8,
+        "omega": 1.0
+      },
+      "unfiltered_corrections": 9999,
+      "sweep_reduction": "均未达标",
+      "optimal_energy_reconstructed": -394164.40790922067,
+      "optimal_energy_pure_crosscheck": -394164.40792287665,
+      "common_budget": {
+        "sweeps": 80000,
+        "pure_normal": 0.0008318746428639488,
+        "unfiltered_normal": 0.005374819375176029,
+        "normal_ratio": 6.461092931828995,
+        "pure_energy": -388141.52420233714,
+        "unfiltered_energy": -391864.62973806413,
+        "pure_relative_energy_gap": 0.015280130793216235,
+        "unfiltered_relative_energy_gap": 0.005834565792876436
+      }
+    }
+  },
+  "source_files": [
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/smallGrid3D_k0/projected995.npz",
+      "sha256": "aa9296035b1d3a286cba4155696c9c38a9bf46a9cbe4a6185b9b1843da16f3b6"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/smallGrid3D_k0/results.json",
+      "sha256": "713bca78b856bcaf92f0150dfe6880df7ed1420f918d66df990f325a47f52de2"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/smallGrid3D_k0/metadata.json",
+      "sha256": "bd11ed7ea72774b7215114f57fe9bd323a4b6ac157427d869d148bf1ccd10b33"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/smallGrid3D_k0/GBP.npz",
+      "sha256": "0cabad6518e5a2ea0ca7b898eb68abc0b3c03e8da07370a0fcc3ee54c28325a4"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/smallGrid3D_k0/results.json",
+      "sha256": "c939bf36a0ec1188554782d3cf23158c91125f6e79c7f275608d6a4347d15f30"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/FR079_k0/projected995.npz",
+      "sha256": "fc4e7007754ae1d0726a531bee08afde688e92c63d6847f13ba2b45a0b8ccf86"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/FR079_k0/results.json",
+      "sha256": "d2982c5839a80c1d3ca84ba3d1240505357dcb4dd71375695b3d67bfe5b09cc3"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/FR079_k0/metadata.json",
+      "sha256": "55eb6165979ab2f5accff70314a23faef640b82923a9b95dc1477eb64722f1a2"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/FR079_k0/GBP.npz",
+      "sha256": "f92ed88211738834149354744fb9260dcf7c40f3679cbbfca097fbc7f64ec130"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/FR079_k0/results.json",
+      "sha256": "d507897225e5e8f3b07c09380eae7e066039225c449b4bdc2caa5c00f67356fe"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Sphere_k0/projected995.npz",
+      "sha256": "a81710696d2bc3f087f31c996dabaf40be7059179eff99f555f663ee4c47def4"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Sphere_k0/results.json",
+      "sha256": "9f0fd1a4f33911bf54ea4e701137c053bb78235399ebe38080f68f30fb343207"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Sphere_k0/metadata.json",
+      "sha256": "80a987b70894c58e43f7080c4ae26e21c8898829ebbab2ec42d9c66e7f867ed3"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/Sphere_k0/GBP.npz",
+      "sha256": "d41f71b9331ba571080101148d6833ff2b1567a49cb053d29f4bf381012405ca"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/pure_replay/Sphere_k0/results.json",
+      "sha256": "4af69d9a545d6313ed7261fe2dfd1409acc78ca1d2756168286be1c71c16d92c"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Cubicle_k0/projected995.npz",
+      "sha256": "36fdf9a057d91949997fd99e6fa577cc5605660e7aaf43ae68f3e1e0160e4515"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Cubicle_k0/results.json",
+      "sha256": "c4051aa9970f6e6026474f049db539a4730fc801cd94c4aa351f29674ece7a8d"
+    },
+    {
+      "path": "side_research/edge_inertia_20261003/results/convergence/Cubicle_k0/metadata.json",
+      "sha256": "c3b7f4d018447a7c0471657d253401cad76d26960799407af83ab14c551c2751"
+    },
+    {
+      "path": "work/study/phase5_results/baseline/Cubicle/GBP.npz",
+      "sha256": "4dceea5a7029709e49d8a9d6d803a0fc80c6bf9fb4093b31f8ebfe32a39200e6"
+    },
+    {
+      "path": "work/study/phase5_results/baseline/Cubicle/results.json",
+      "sha256": "9d308dbcab99459b80b266027ed15d96768847a1cb276fac2b8bcf5449ac669d"
+    }
+  ]
+}

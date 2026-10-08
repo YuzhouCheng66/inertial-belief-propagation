@@ -1,0 +1,20 @@
+{
+  "name": "tn32_s202",
+  "domain": "tensor",
+  "L": 32,
+  "N": 1024,
+  "seed": 202,
+  "mode": "slow",
+  "group_nodes": 4,
+  "J": null,
+  "setup_seconds": 0.13761663500000054,
+  "precision_iterations": 0,
+  "precision_error": 0.0,
+  "beta_cap": 0.95,
+  "tau": 0.45,
+  "period": 8,
+  "tn_base_tensor_seed": 82,
+  "tn_original_screened_noise": 1.55,
+  "nonuniform_physical_bias": true,
+  "precision_frozen": false
+}

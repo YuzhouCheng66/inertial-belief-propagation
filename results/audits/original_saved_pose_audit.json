@@ -1,0 +1,54 @@
+{
+  "FR079_projected995": {
+    "accepted_steps": 20,
+    "saved_cost_max_relative_error": 0.0,
+    "all_accepted_costs_nonincreasing": true,
+    "root_pose_error": 0.0,
+    "full_cycles_and_precision_certificate_pass": true,
+    "work_ledger_pass": true,
+    "actual_canonical_message_warp_potential_relative_error": 6.938893903907228e-18,
+    "last_pose_update_error": 0.0,
+    "first_linearization_original_kernel_normal_relative_difference": 9.313581378896736e-12,
+    "final_gradient_measure": 0.009319660863666705,
+    "next_chart_psd_projection": 0.0
+  },
+  "FR079_GBP": {
+    "accepted_steps": 20,
+    "saved_cost_max_relative_error": 0.0,
+    "all_accepted_costs_nonincreasing": true,
+    "root_pose_error": 0.0,
+    "full_cycles_and_precision_certificate_pass": true,
+    "work_ledger_pass": true,
+    "actual_canonical_message_warp_potential_relative_error": 2.5153490401663703e-17,
+    "last_pose_update_error": 0.0,
+    "first_linearization_original_kernel_normal_relative_difference": 9.309361045945081e-13,
+    "final_gradient_measure": 0.0036207897266248637,
+    "next_chart_psd_projection": 0.0
+  },
+  "Cubicle_projected995": {
+    "accepted_steps": 20,
+    "saved_cost_max_relative_error": 0.0,
+    "all_accepted_costs_nonincreasing": true,
+    "root_pose_error": 0.0,
+    "full_cycles_and_precision_certificate_pass": true,
+    "work_ledger_pass": true,
+    "actual_canonical_message_warp_potential_relative_error": 6.076736336346755e-15,
+    "last_pose_update_error": 0.0,
+    "first_linearization_original_kernel_normal_relative_difference": 6.810055389905663e-13,
+    "final_gradient_measure": 0.17670524741482585,
+    "next_chart_psd_projection": 0.0
+  },
+  "Cubicle_GBP": {
+    "accepted_steps": 20,
+    "saved_cost_max_relative_error": 0.0,
+    "all_accepted_costs_nonincreasing": true,
+    "root_pose_error": 0.0,
+    "full_cycles_and_precision_certificate_pass": true,
+    "work_ledger_pass": true,
+    "actual_canonical_message_warp_potential_relative_error": 4.685558626632384e-15,
+    "last_pose_update_error": 0.0,
+    "first_linearization_original_kernel_normal_relative_difference": 3.908583545957632e-13,
+    "final_gradient_measure": 0.027774184132873542,
+    "next_chart_psd_projection": 0.0
+  }
+}

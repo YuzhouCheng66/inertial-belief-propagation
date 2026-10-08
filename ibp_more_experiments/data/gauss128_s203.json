@@ -1,0 +1,20 @@
+{
+  "name": "gauss128_s203",
+  "domain": "gaussian",
+  "L": 128,
+  "N": 16384,
+  "seed": 203,
+  "mode": "slow",
+  "group_nodes": 32,
+  "J": null,
+  "setup_seconds": 0.009064840999997159,
+  "precision_iterations": 35,
+  "precision_error": 3.452793606584237e-14,
+  "beta_cap": 0.95,
+  "tau": 0.45,
+  "period": 8,
+  "tn_base_tensor_seed": null,
+  "tn_original_screened_noise": null,
+  "nonuniform_physical_bias": false,
+  "precision_frozen": true
+}

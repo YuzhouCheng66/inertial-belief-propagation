@@ -1,0 +1,104 @@
+{
+  "fixtures_pass": true,
+  "summary_ratio_medians_pass": true,
+  "work_ledger_pass": true,
+  "trajectory_scaling_pass": true,
+  "fixtures": [
+    {
+      "fixture": "check_0.bin",
+      "domain": 0,
+      "nodes": 64,
+      "groups": 2,
+      "seed": 201,
+      "bytes": 7472
+    },
+    {
+      "fixture": "check_1.bin",
+      "domain": 1,
+      "nodes": 64,
+      "groups": 2,
+      "seed": 201,
+      "bytes": 7472
+    },
+    {
+      "fixture": "check_2.bin",
+      "domain": 2,
+      "nodes": 16,
+      "groups": 4,
+      "seed": 201,
+      "bytes": 34680
+    },
+    {
+      "fixture": "gauss128_s201.bin",
+      "domain": 0,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 201,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "gauss128_s202.bin",
+      "domain": 0,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 202,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "gauss128_s203.bin",
+      "domain": 0,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 203,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "ising128_s201.bin",
+      "domain": 1,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 201,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "ising128_s202.bin",
+      "domain": 1,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 202,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "ising128_s203.bin",
+      "domain": 1,
+      "nodes": 16384,
+      "groups": 512,
+      "seed": 203,
+      "bytes": 1902632
+    },
+    {
+      "fixture": "tn32_s201.bin",
+      "domain": 2,
+      "nodes": 1024,
+      "groups": 256,
+      "seed": 201,
+      "bytes": 2217000
+    },
+    {
+      "fixture": "tn32_s202.bin",
+      "domain": 2,
+      "nodes": 1024,
+      "groups": 256,
+      "seed": 202,
+      "bytes": 2217000
+    },
+    {
+      "fixture": "tn32_s203.bin",
+      "domain": 2,
+      "nodes": 1024,
+      "groups": 256,
+      "seed": 203,
+      "bytes": 2217000
+    }
+  ]
+}

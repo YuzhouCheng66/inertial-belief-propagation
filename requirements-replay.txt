@@ -1,0 +1,4 @@
+# Original verified Windows research runtime (Python 3.11).
+numpy==1.26.4
+scipy==1.13.1
+numba==0.59.1
